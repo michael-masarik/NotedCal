@@ -132,7 +132,7 @@ So:
 ```js
 import { DateTime } from "luxon";
 
-function notionDateToICS(dtStr, tzStr = null) {
+function reformatDate(dtStr, tzStr = null) {
   // If tzinfo in ISO string, Luxon handles it
   let dt = DateTime.fromISO(dtStr, { zone: tzStr || "utc" });
 
